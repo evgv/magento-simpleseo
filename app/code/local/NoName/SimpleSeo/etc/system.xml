@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <noname_tab translate="label">
+            <label>NONAME EXTESIONS</label>
+            <sort_order>350</sort_order>
+        </noname_tab>
+    </tabs>
+    <sections>
+        <simpleseo translate="label">
+            <label>Simple SEO</label>
+            <tab>noname_tab</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+
+                <general translate="label tooltip">
+                    <label>General settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label tooltip">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                    </fields>
+                </general>
+
+                <product translate="label tooltip">
+                    <label>Template for product page</label>
+                    <comment></comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>
+                        <![CDATA[
+                            Variables for use in SEO text, they are replace in text on values:<br>
+                            {product.name}         - product name<br>
+                            {product.price}        - product price<br>
+                            {product.manufacturer} - product price<br>
+                        ]]>
+                    </comment>
+                    <fields>
+                        <active translate="label tooltip">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>             
+                        
+                        <title translate="label tooltip">
+                            <label>Template for product page title</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </title>
+                        
+                        <description translate="label tooltip">
+                            <label>Template for product page meta description</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </description>
+                        
+                        <keys translate="label tooltip">
+                            <label>Template for product page meta keys</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </keys>
+                        
+                        <h1 translate="label tooltip">
+                            <label>Template for product page H1 tag</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </h1>
+                    </fields>
+                </product>
+
+                <category translate="label tooltip">
+                    <label>Template for category page</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>
+                        <![CDATA[
+                            Variables for use in SEO text, they are replace in text on values:<br>
+                            {category.name} - category name<br>
+                            {category.short_description}- category short description<br>
+                            {category.description} - category description<br>
+                        ]]>
+                    </comment>
+                    <fields>
+                        <active translate="label tooltip">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        
+                        <title translate="label tooltip">
+                            <label>Template for category page title</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </title>
+                        
+                        <description translate="label tooltip">
+                            <label>Template for category page meta description</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </description>
+                        
+                        <keys translate="label tooltip">
+                            <label>Template for category page meta keys</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </keys>
+                        
+                        <h1 translate="label tooltip">
+                            <label>Template for category page H1 tag</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </h1>
+                    </fields>
+                </category>
+
+                <manufacturer translate="label tooltip">
+                    <label>Template for manufacturer(category with manufacturer) page</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>
+                        <![CDATA[
+                            Variables for use in SEO text, they are replace in text on values:<br>
+                            {category.name} - category name<br>
+                            {category.short_description}- category short description<br>
+                            {category.description} - category description<br>
+
+                            {manufacturer.name} - manufacturer name<br>
+                        ]]>
+                    </comment>
+                    <fields>
+                        <active translate="label tooltip">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        
+                        <title translate="label tooltip">
+                            <label>Template for manufacturer(category with manufacturer) page title</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </title>
+                        
+                        <description translate="label tooltip">
+                            <label>Template for manufacturer(category with manufacturer) page meta description</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </description>
+                        
+                        <keys translate="label tooltip">
+                            <label>Template for manufacturer(category with manufacturer) page meta keys</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </keys>
+                        
+                        <h1 translate="label tooltip">
+                            <label>Template for manufacturer(category with manufacturer) page H1 tag</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </h1>
+                    </fields>
+                </manufacturer>
+
+                <cms translate="label tooltip">
+                    <label>Template for cms page</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>
+                        <![CDATA[
+                            Variables for use in SEO text, they are replace in text on values:<br>
+                            {page.title} - cms(or other) page titleproduct name<br>
+                        ]]>
+                    </comment>
+                    <fields>
+                        <active translate="label tooltip">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                                    
+                        <title translate="label tooltip">
+                            <label>Template for cms page title</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </title>
+                        
+                        <description translate="label tooltip">
+                            <label>Template for cms page meta description</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </description>
+                        
+                        <keys translate="label tooltip">
+                            <label>Template for cms page meta keys</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </keys>
+                        
+                        <h1 translate="label tooltip">
+                            <label>Template for cms page H1 tag</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </h1>
+                    </fields>
+                </cms>
+
+          </groups>
+        </simpleseo>
+    </sections>
+</config>

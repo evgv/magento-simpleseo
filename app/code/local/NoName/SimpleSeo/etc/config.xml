@@ -1,0 +1,65 @@
+<config>    
+    
+    <modules>
+        <NoName_SimpleSeo>
+            <version>1.0.0</version>
+        </NoName_SimpleSeo>
+    </modules>
+    
+    <global>
+        <helpers>
+            <simpleseo>
+                <class>NoName_SimpleSeo_Helper</class>
+            </simpleseo>
+        </helpers>
+        <models>
+            <simpleseo>
+                <class>NoName_SimpleSeo_Model</class>
+            </simpleseo>
+        </models>
+    </global>
+    
+    <frontend>
+        <events>
+            <catalog_controller_product_view>
+                <observers>
+                    <simpleseo>
+                        <class>NoName_SimpleSeo_Model_Observer</class>
+                        <method>catalogControllerProductView</method>
+                    </simpleseo>
+                </observers>
+            </catalog_controller_product_view>
+            
+            <catalog_controller_category_init_after>
+                <observers>
+                    <simpleseo>
+                        <class>NoName_SimpleSeo_Model_Observer</class>
+                        <method>catalogControllerCategoryInitAfter</method>
+                    </simpleseo>
+                </observers>
+            </catalog_controller_category_init_after>
+            
+            <cms_page_render>
+                <observers>
+                    <simpleseo>
+                        <class>NoName_SimpleSeo_Model_Observer</class>
+                        <method>cmsPageRender</method>
+                    </simpleseo>
+                </observers>
+            </cms_page_render>
+        </events>
+    </frontend>
+
+    <admin>
+        <routers>
+            <simpleseo>
+                <use>admin</use>
+                <args>
+                    <module>NoName_SimpleSeo</module>
+                    <frontName>simpleseo</frontName>
+                </args>
+            </simpleseo>
+        </routers>
+    </admin>
+    
+</config>

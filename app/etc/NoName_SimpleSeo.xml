@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <NoName_SimpleSeo>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends/>
+        </NoName_SimpleSeo>
+    </modules>
+</config>
