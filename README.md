@@ -1,2 +1,2 @@
 # NoName_SimpleSeo
-Simple extension for Magento 1.x for SEO
+Simple Magento 1.XX extension for SEO
