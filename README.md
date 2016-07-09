@@ -4,7 +4,6 @@ Plug and Play Magento Extension for generate own SEO templates for custom pages.
 
 [Features](#features)  
 [Magento Compatibility](#magento-compatibility)   
-[Setting](#settings)
 
 ## Features
 - Simple in use
