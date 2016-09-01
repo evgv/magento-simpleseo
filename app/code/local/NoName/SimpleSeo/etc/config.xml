@@ -1,11 +1,11 @@
-<config>    
-    
+<config>
+
     <modules>
         <NoName_SimpleSeo>
             <version>1.0.0</version>
         </NoName_SimpleSeo>
     </modules>
-    
+
     <global>
         <helpers>
             <simpleseo>
@@ -18,7 +18,7 @@
             </simpleseo>
         </models>
     </global>
-    
+
     <frontend>
         <events>
             <catalog_controller_product_view>
@@ -29,7 +29,7 @@
                     </simpleseo>
                 </observers>
             </catalog_controller_product_view>
-            
+
             <catalog_controller_category_init_after>
                 <observers>
                     <simpleseo>
@@ -38,7 +38,7 @@
                     </simpleseo>
                 </observers>
             </catalog_controller_category_init_after>
-            
+
             <cms_page_render>
                 <observers>
                     <simpleseo>
@@ -48,6 +48,14 @@
                 </observers>
             </cms_page_render>
         </events>
+
+        <layout>
+            <updates>
+                <simpleseo>
+                    <file>simpleseo.xml</file>
+                </simpleseo>
+            </updates>
+        </layout>
     </frontend>
 
     <admin>
@@ -61,5 +69,5 @@
             </simpleseo>
         </routers>
     </admin>
-    
+
 </config>

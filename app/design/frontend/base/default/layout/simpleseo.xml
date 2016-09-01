@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<layout version="0.1.0">
+<!-- Default layout, loads most of the pages -->
+
+    <default translate="label" module="page">
+        <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs">
+            <action method="setTemplate" ifconfig="simpleseo/cms/breadcrumb">
+                <template>simpleseo/page/html/breadcrumbs.phtml</template>
+            </action>
+        </block>
+    </default>
+</layout>

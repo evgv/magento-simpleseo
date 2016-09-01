@@ -1,0 +1,36 @@
+<?php
+/**
+ * @category    design
+ * @package     base_default
+ */
+?>
+
+<?php /* @var $_helperSCS NoName_SimpleSeo_Helper_Cms */ ?>
+<?php $_helperSCS = Mage::helper('simpleseo/cms'); ?>
+
+<?php if($crumbs && is_array($crumbs)): ?>
+<div class="breadcrumbs">
+    <ul>
+        <?php foreach($crumbs as $_crumbName=>$_crumbInfo): ?>
+            <?php if($_crumbName == 'cms_page'): ?>
+               <?php if($crumb = $_helperSCS->getBreadcrumb()): ?>
+                   <?php $_crumbInfo['label'] = $crumb ?>
+                   <?php $_crumbInfo['title'] = $crumb ?>
+               <?php endif; ?>
+            <?php endif; ?>
+            <li class="<?php echo $_crumbName ?>">
+            <?php if($_crumbInfo['link']): ?>
+                <a href="<?php echo $_crumbInfo['link'] ?>" title="<?php echo $this->escapeHtml($_crumbInfo['title']) ?>"><?php echo $this->escapeHtml($_crumbInfo['label']) ?></a>
+            <?php elseif($_crumbInfo['last']): ?>
+                <strong><?php echo $this->escapeHtml($_crumbInfo['label']) ?></strong>
+            <?php else: ?>
+                <?php echo $this->escapeHtml($_crumbInfo['label']) ?>
+            <?php endif; ?>
+            <?php if(!$_crumbInfo['last']): ?>
+                <span>/ </span>
+            <?php endif; ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+<?php endif; ?>

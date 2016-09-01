@@ -62,8 +62,8 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
-                        </active>             
-                        
+                        </active>
+
                         <title translate="label tooltip">
                             <label>Template for product page title</label>
                             <frontend_type>textarea</frontend_type>
@@ -75,7 +75,7 @@
                                 <active>1</active>
                             </depends>
                         </title>
-                        
+
                         <description translate="label tooltip">
                             <label>Template for product page meta description</label>
                             <frontend_type>textarea</frontend_type>
@@ -87,7 +87,7 @@
                                 <active>1</active>
                             </depends>
                         </description>
-                        
+
                         <keys translate="label tooltip">
                             <label>Template for product page meta keys</label>
                             <frontend_type>textarea</frontend_type>
@@ -99,7 +99,7 @@
                                 <active>1</active>
                             </depends>
                         </keys>
-                        
+
                         <h1 translate="label tooltip">
                             <label>Template for product page H1 tag</label>
                             <frontend_type>textarea</frontend_type>
@@ -139,7 +139,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </active>
-                        
+
                         <title translate="label tooltip">
                             <label>Template for category page title</label>
                             <frontend_type>textarea</frontend_type>
@@ -151,7 +151,7 @@
                                 <active>1</active>
                             </depends>
                         </title>
-                        
+
                         <description translate="label tooltip">
                             <label>Template for category page meta description</label>
                             <frontend_type>textarea</frontend_type>
@@ -163,7 +163,7 @@
                                 <active>1</active>
                             </depends>
                         </description>
-                        
+
                         <keys translate="label tooltip">
                             <label>Template for category page meta keys</label>
                             <frontend_type>textarea</frontend_type>
@@ -175,7 +175,7 @@
                                 <active>1</active>
                             </depends>
                         </keys>
-                        
+
                         <h1 translate="label tooltip">
                             <label>Template for category page H1 tag</label>
                             <frontend_type>textarea</frontend_type>
@@ -217,7 +217,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </active>
-                        
+
                         <title translate="label tooltip">
                             <label>Template for manufacturer(category with manufacturer) page title</label>
                             <frontend_type>textarea</frontend_type>
@@ -229,7 +229,7 @@
                                 <active>1</active>
                             </depends>
                         </title>
-                        
+
                         <description translate="label tooltip">
                             <label>Template for manufacturer(category with manufacturer) page meta description</label>
                             <frontend_type>textarea</frontend_type>
@@ -241,7 +241,7 @@
                                 <active>1</active>
                             </depends>
                         </description>
-                        
+
                         <keys translate="label tooltip">
                             <label>Template for manufacturer(category with manufacturer) page meta keys</label>
                             <frontend_type>textarea</frontend_type>
@@ -253,7 +253,7 @@
                                 <active>1</active>
                             </depends>
                         </keys>
-                        
+
                         <h1 translate="label tooltip">
                             <label>Template for manufacturer(category with manufacturer) page H1 tag</label>
                             <frontend_type>textarea</frontend_type>
@@ -278,7 +278,7 @@
                     <comment>
                         <![CDATA[
                             Variables for use in SEO text, they are replace in text on values:<br>
-                            {page.title} - cms(or other) page titleproduct name<br>
+                            {page.title} - cms(or other) page title<br>
                         ]]>
                     </comment>
                     <fields>
@@ -291,7 +291,7 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </active>
-                                    
+
                         <breadcrumb translate="label tooltip">
                             <label>Template for cms page breadcrumb</label>
                             <frontend_type>textarea</frontend_type>
@@ -303,7 +303,7 @@
                                 <active>1</active>
                             </depends>
                         </breadcrumb>
-                        
+
                         <title translate="label tooltip">
                             <label>Template for cms page title</label>
                             <frontend_type>textarea</frontend_type>
@@ -315,7 +315,7 @@
                                 <active>1</active>
                             </depends>
                         </title>
-                        
+
                         <description translate="label tooltip">
                             <label>Template for cms page meta description</label>
                             <frontend_type>textarea</frontend_type>
@@ -327,7 +327,7 @@
                                 <active>1</active>
                             </depends>
                         </description>
-                        
+
                         <keys translate="label tooltip">
                             <label>Template for cms page meta keys</label>
                             <frontend_type>textarea</frontend_type>
@@ -339,7 +339,7 @@
                                 <active>1</active>
                             </depends>
                         </keys>
-                        
+
                         <h1 translate="label tooltip">
                             <label>Template for cms page H1 tag</label>
                             <frontend_type>textarea</frontend_type>
