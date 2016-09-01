@@ -25,9 +25,9 @@ The following version have passed all tests:
  - H1 tag
 
 Variables for SEO text, they are will replace with values:
-`{product.name}`         - product name
-`{product.price}`        - product price
-`{product.manufacturer}` - product price
+`{product.name}`         - product name  
+`{product.price}`        - product price  
+`{product.manufacturer}` - product price  
 
 Retrieve H1 for product page
 ```php
@@ -42,9 +42,9 @@ Retrieve H1 for product page
 - Meta keys
 - H1 tag
 
-`{category.name}`              - category name
-`{category.short_description}` - category short description
-`{category.description}`       - category description
+`{category.name}`              - category name  
+`{category.short_description}` - category short description  
+`{category.description}`       - category description  
 
 Retrieve H1 for category page
 ```php
@@ -54,7 +54,7 @@ Retrieve H1 for category page
 ```
 
 #### Customize category pages with attribute
-The same as for a category page, added only attribute `manufacturer` value get from request if exist.
+The same as for a category page, added only attribute `manufacturer` value get from request if exist.  
 `{manufacturer.name}` - manufacturer name
 
 #### Customize CMS pages
@@ -64,4 +64,4 @@ The same as for a category page, added only attribute `manufacturer` value get f
 - Meta keys
 - H1 tag
 
-`{page.title}` - cms(or other) page title
+`{page.title}` - cms(or other) page title  
