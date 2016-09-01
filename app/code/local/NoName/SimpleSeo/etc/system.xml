@@ -292,10 +292,22 @@
                             <show_in_store>1</show_in_store>
                         </active>
                                     
+                        <breadcrumb translate="label tooltip">
+                            <label>Template for cms page breadcrumb</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <active>1</active>
+                            </depends>
+                        </breadcrumb>
+                        
                         <title translate="label tooltip">
                             <label>Template for cms page title</label>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>20</sort_order>
+                            <sort_order>30</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -307,7 +319,7 @@
                         <description translate="label tooltip">
                             <label>Template for cms page meta description</label>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>30</sort_order>
+                            <sort_order>40</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -319,7 +331,7 @@
                         <keys translate="label tooltip">
                             <label>Template for cms page meta keys</label>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>40</sort_order>
+                            <sort_order>50</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
@@ -331,7 +343,7 @@
                         <h1 translate="label tooltip">
                             <label>Template for cms page H1 tag</label>
                             <frontend_type>textarea</frontend_type>
-                            <sort_order>50</sort_order>
+                            <sort_order>60</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
